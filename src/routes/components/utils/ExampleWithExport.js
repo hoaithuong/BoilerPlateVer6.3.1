@@ -63,10 +63,6 @@ export class ExampleWithExport extends React.Component {
         this.doExport({});
     };
 
-    exportToXLSX = () => {
-        this.doExport({ format: "xlsx", mergeHeaders: true, includeFilterContext: true });
-    };
-
     exportWithCustomName = () => {
         this.doExport({ title: "CustomName" });
     };
@@ -118,9 +114,6 @@ export class ExampleWithExport extends React.Component {
                 <div style={{ marginTop: 15 }}>
                     <button className="gd-button gd-button-secondary" onClick={this.exportToCSV}>
                         Export CSV
-                    </button>
-                    <button className="gd-button gd-button-secondary" onClick={this.exportToXLSX}>
-                        Export XLSX
                     </button>
                     <button className="gd-button gd-button-secondary" onClick={this.exportWithCustomName}>
                         Export with custom name CustomName

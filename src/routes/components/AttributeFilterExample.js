@@ -9,7 +9,6 @@ import {
     totalSalesIdentifier,
     locationResortIdentifier,
     locationResortUri,
-    locationResortDisplayFormUri,
     projectId,
 } from "../utils/fixtures";
 
@@ -100,7 +99,7 @@ export class AttributeFilterExample extends Component {
         ];
         this.setState({ filters });
     }
-    
+
     render() {
         const { filters, error } = this.state;
         return (

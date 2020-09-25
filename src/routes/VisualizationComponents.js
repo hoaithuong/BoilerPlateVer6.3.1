@@ -2,7 +2,6 @@
 import React from "react";
 
 import Page from "../components/Page";
-import { useProjectId } from "../contexts/ProjectId";
 
 import VisualizationColumnChartExample from "./components/VisualizationColumnChartByUriExample";
 import VisualizationTableExample from "./components/VisualizationTableByUriExample";
@@ -31,144 +30,144 @@ import VisualizationTreemapExampleIdentifier from "./components/VisualizationTre
 import VisualizationHeatmapExampleIdentifier from "./components/VisualizationHeatmapByIdentifierExample";
 
 const VisualizationComponents = () => {
-    const { projectId } = useProjectId();
     return (
         <Page>
             <div>
                 <h1>Visualization by URI</h1>
 
                 <p>
-                    These are the examples of the generic Visualization component that uses URI to identify insights.
-                </p>
-
-                <hr className="separator" />
-
-                <h2 id="column-chart">Column Chart</h2>
-                <VisualizationColumnChartExample/>
-
-                <hr className="separator" />
-
-                <h2 id="table">Table</h2>
-                <VisualizationTableExample/>
-
-                <hr className="separator" />
-
-                <h2 id="bar">Bar Chart</h2>
-                <VisualizationBarExample/>
-
-                <hr className="separator" />
-
-                <h2 id="line">Line Chart</h2>
-                <VisualizationLineExample/>
-
-                <hr className="separator" />
-
-                <h2 id="area">Stacked Area Chart</h2>
-                <VisualizationAreaExample/>
-
-                <hr className="separator" />
-
-                <h2 id="headline">Headline</h2>
-                <VisualizationHeadlineExample/>
-
-                <hr className="separator" />
-
-                <h2 id="scatter">Scatter Plot</h2>
-                <VisualizationScatterExample/>
-
-                <hr className="separator" />
-
-                <h2 id="bubble">Bubble Chart</h2>
-                <VisualizationBubbleExample/>
-
-                <hr className="separator" />
-
-                <h2 id="pie">Pie Chart</h2>
-                <VisualizationPieExample/>
-
-                <hr className="separator" />
-
-                <h2 id="donut">Donut Chart</h2>
-                <VisualizationDonutExample/>
-
-                <hr className="separator" />
-
-                <h2 id="treemap">Treemap</h2>
-                <VisualizationTreemapExample/>
-
-                <hr className="separator" />
-
-                <h2 id="heatmap">Heatmap</h2>
-                <VisualizationHeatmapExample/>
-
-                <hr className="separator" />
-
-                <h1>Visualization by identifier</h1>
-
-                <p>
-                    These are the examples of the generic Visualization component that uses identifier to identify
+                    These are the examples of the generic Visualization component that uses URI to identify
                     insights.
                 </p>
 
                 <hr className="separator" />
 
                 <h2 id="column-chart">Column Chart</h2>
-                <VisualizationColumnChartByIdentifierExample/>
+                <VisualizationColumnChartExample />
 
                 <hr className="separator" />
 
                 <h2 id="table">Table</h2>
-                <VisualizationTableExampleIdentifier/>
+                <VisualizationTableExample />
 
                 <hr className="separator" />
 
                 <h2 id="bar">Bar Chart</h2>
-                <VisualizationBarExampleIdentifier/>
+                <VisualizationBarExample />
 
                 <hr className="separator" />
 
                 <h2 id="line">Line Chart</h2>
-                <VisualizationLineExampleIdentifier/>
+                <VisualizationLineExample />
 
                 <hr className="separator" />
 
                 <h2 id="area">Stacked Area Chart</h2>
-                <VisualizationAreaExampleIdentifier/>
+                <VisualizationAreaExample />
 
                 <hr className="separator" />
 
                 <h2 id="headline">Headline</h2>
-                <VisualizationHeadlineExampleIdentifier/>
+                <VisualizationHeadlineExample />
 
                 <hr className="separator" />
 
                 <h2 id="scatter">Scatter Plot</h2>
-                <VisualizationScatterExampleIdentifier/>
+                <VisualizationScatterExample />
 
                 <hr className="separator" />
 
                 <h2 id="bubble">Bubble Chart</h2>
-                <VisualizationBubbleExampleIdentifier/>
+                <VisualizationBubbleExample />
 
                 <hr className="separator" />
 
                 <h2 id="pie">Pie Chart</h2>
-                <VisualizationPieExampleIdentifier/>
+                <VisualizationPieExample />
 
                 <hr className="separator" />
 
                 <h2 id="donut">Donut Chart</h2>
-                <VisualizationDonutExampleIdentifier/>
+                <VisualizationDonutExample />
 
                 <hr className="separator" />
 
                 <h2 id="treemap">Treemap</h2>
-                <VisualizationTreemapExampleIdentifier/>
+                <VisualizationTreemapExample />
 
                 <hr className="separator" />
 
                 <h2 id="heatmap">Heatmap</h2>
-                <VisualizationHeatmapExampleIdentifier/>
+                <VisualizationHeatmapExample />
+
+                <hr className="separator" />
+
+                <h1>Visualization by identifier</h1>
+
+                <p>
+                    These are the examples of the generic Visualization component that uses identifier to
+                    identify insights.
+                </p>
+
+                <hr className="separator" />
+
+                <h2 id="column-chart">Column Chart</h2>
+                <VisualizationColumnChartByIdentifierExample />
+
+                <hr className="separator" />
+
+                <h2 id="table">Table</h2>
+                <VisualizationTableExampleIdentifier />
+
+                <hr className="separator" />
+
+                <h2 id="bar">Bar Chart</h2>
+                <VisualizationBarExampleIdentifier />
+
+                <hr className="separator" />
+
+                <h2 id="line">Line Chart</h2>
+                <VisualizationLineExampleIdentifier />
+
+                <hr className="separator" />
+
+                <h2 id="area">Stacked Area Chart</h2>
+                <VisualizationAreaExampleIdentifier />
+
+                <hr className="separator" />
+
+                <h2 id="headline">Headline</h2>
+                <VisualizationHeadlineExampleIdentifier />
+
+                <hr className="separator" />
+
+                <h2 id="scatter">Scatter Plot</h2>
+                <VisualizationScatterExampleIdentifier />
+
+                <hr className="separator" />
+
+                <h2 id="bubble">Bubble Chart</h2>
+                <VisualizationBubbleExampleIdentifier />
+
+                <hr className="separator" />
+
+                <h2 id="pie">Pie Chart</h2>
+                <VisualizationPieExampleIdentifier />
+
+                <hr className="separator" />
+
+                <h2 id="donut">Donut Chart</h2>
+                <VisualizationDonutExampleIdentifier />
+
+                <hr className="separator" />
+
+                <h2 id="treemap">Treemap</h2>
+                <VisualizationTreemapExampleIdentifier />
+
+                <hr className="separator" />
+
+                <h2 id="heatmap">Heatmap</h2>
+                <VisualizationHeatmapExampleIdentifier />
             </div>
         </Page>
     );

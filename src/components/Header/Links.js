@@ -1,5 +1,4 @@
 import React from "react";
-import cx from "classnames";
 import { NavLink } from "react-router-dom";
 import styles from "./Header.module.scss";
 
@@ -18,7 +17,12 @@ const Links = () => {
             <NavLink to={"/arithmetic"} className={styles.Link} activeClassName={styles.LinkActive} exact>
                 Arithmetic Measure
             </NavLink>
-            <NavLink to={"/attribute-filter"} className={styles.Link} activeClassName={styles.LinkActive} exact>
+            <NavLink
+                to={"/attribute-filter"}
+                className={styles.Link}
+                activeClassName={styles.LinkActive}
+                exact
+            >
                 Attribute Filter
             </NavLink>
             <NavLink to={"/time-over"} className={styles.Link} activeClassName={styles.LinkActive} exact>

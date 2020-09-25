@@ -1,7 +1,6 @@
 import React from "react";
 
 import Page from "../components/Page";
-import { useProjectId } from "../contexts/ProjectId";
 
 import AreaChartExample from "./components/AreaChartExample";
 import BarChartExample from "./components/BarChartExample";
@@ -19,90 +18,89 @@ import HeadlineExample from "./components/HeadlineExample";
 import KpiExample from "./components/KpiExample";
 
 const BasicComponents = () => {
-    const { projectId } = useProjectId();
     return (
         <Page>
             <div>
                 <h1>Basic Components</h1>
 
                 <p>
-                    The following components accept measures and attributes, perform the execution, and render data as
-                    a chart, table or KPI.
+                    The following components accept measures and attributes, perform the execution, and render
+                    data as a chart, table or KPI.
                 </p>
 
                 <hr className="separator" />
 
                 <h2 id="bar-chart">Bar chart</h2>
-                <BarChartExample/>
+                <BarChartExample />
 
                 <hr className="separator" />
 
                 <h2 id="column-chart">Column chart</h2>
-                <ColumnChartExample/>
+                <ColumnChartExample />
 
                 <hr className="separator" />
 
                 <h2 id="line-chart">Line chart with custom colors</h2>
-                <LineChartExample/>
+                <LineChartExample />
 
                 <hr className="separator" />
 
                 <h2 id="area-chart">Area chart</h2>
-                <AreaChartExample/>
+                <AreaChartExample />
 
                 <hr className="separator" />
 
                 <h2 id="stacked-area-chart">Stacked area chart</h2>
-                <StackedAreaChartExample/>
+                <StackedAreaChartExample />
 
                 <hr className="separator" />
 
                 <h2 id="pie-chart">Pie chart</h2>
-                <PieChartExample/>
+                <PieChartExample />
 
                 <hr className="separator" />
 
                 <h2 id="donut-chart">Donut chart</h2>
-                <DonutChartExample/>
+                <DonutChartExample />
 
                 <hr className="separator" />
 
                 <h2 id="scatter-plot">Scatter plot</h2>
-                <ScatterPlotExample/>
+                <ScatterPlotExample />
 
                 <hr className="separator" />
 
                 <h2 id="bubble-chart">Bubble chart</h2>
-                <BubbleChartExample/>
+                <BubbleChartExample />
 
                 <hr className="separator" />
 
                 <h2 id="treemap">Treemap</h2>
-                <TreemapExample/>
+                <TreemapExample />
 
                 <hr className="separator" />
 
                 <h2 id="heatmap">Heatmap</h2>
-                <HeatmapExample/>
+                <HeatmapExample />
 
                 <hr className="separator" />
 
                 <h2 id="table">Table</h2>
-                <TableExample/>
+                <TableExample />
 
                 <hr className="separator" />
 
                 <h2 id="table">Headline</h2>
-                <HeadlineExample/>
+                <HeadlineExample />
 
                 <hr className="separator" />
 
                 <h2 id="kpi">KPI</h2>
                 <p>
-                    The interface of the KPI component is different compared to the components above. It takes only
-                    one measure.
+                    The interface of the KPI component is different compared to the components above. It takes
+                    only one measure.
                 </p>
-                <KpiExample/>
+                <KpiExample />
             </div>
         </Page>
     );

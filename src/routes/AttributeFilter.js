@@ -2,14 +2,12 @@
 import React from "react";
 
 import Page from "../components/Page";
-import { useProjectId } from "../contexts/ProjectId";
 
 import AttributeFilterComponentExample from "./components/AttributeFilterComponentExample";
 import AttributeElementsExample from "./components/AttributeElementsExample";
 import AttributeFilterExample from "./components/AttributeFilterExample";
 
 const AttributeFilter = () => {
-    const { projectId } = useProjectId();
     return (
         <Page>
             <div>
@@ -21,14 +19,14 @@ const AttributeFilter = () => {
 
                 <h2>Attribute Filter</h2>
                 <p>
-                    You can render a styled dropdown with selectable attribute values using this Attribute Filter
-                    component.
+                    You can render a styled dropdown with selectable attribute values using this Attribute
+                    Filter component.
                 </p>
                 <p>
-                    Pass a custom onApply function to this component to handle what happens when the user clicks the
-                    Apply button.
+                    Pass a custom onApply function to this component to handle what happens when the user
+                    clicks the Apply button.
                 </p>
-                <AttributeFilterComponentExample/>
+                <AttributeFilterComponentExample />
 
                 <hr className="separator" />
 
@@ -36,20 +34,20 @@ const AttributeFilter = () => {
 
                 <p>This example shows how to add attribute filter component into a report.</p>
 
-                <AttributeFilterExample/>
+                <AttributeFilterExample />
 
                 <hr className="separator" />
 
                 <h2>Custom Attribute Filter using Attribute Elements component</h2>
                 <p>
-                    Pass a custom children function to this component to render the returned data using your custom
-                    components.
+                    Pass a custom children function to this component to render the returned data using your
+                    custom components.
                 </p>
                 <p>
-                    The children function will receive isLoading state, possible error state, attribute metadata,
-                    paging, attribute values and a loadMore function.
+                    The children function will receive isLoading state, possible error state, attribute
+                    metadata, paging, attribute values and a loadMore function.
                 </p>
-                <AttributeElementsExample/>
+                <AttributeElementsExample />
             </div>
         </Page>
     );

@@ -2,7 +2,6 @@ import React from "react";
 import { BrowserRouter as Router, Route, Redirect } from "react-router-dom";
 import "@gooddata/react-components/styles/css/main.css";
 
-import { ProjectIdProvider } from "../contexts/ProjectId";
 import Login from "./Login";
 import Logout from "./Logout";
 import BasicComponents from "./BasicComponents";
@@ -30,23 +29,20 @@ const AppRouter = () => {
     return (
         <div className={styles.AppRouter}>
             <Router>
-                {/* ProjectIdProvider depends on Router so it must be nested */}
-                <ProjectIdProvider>
-                    <Route exact path="/" component={BasicComponents} />
-                    <Route exact path="/afm" component={AFMComponents} />
-                    <Route exact path="/visualization" component={VisualizationComponents} />
-                    <Route exact path="/arithmetic" component={ArithmeticMeasure} />
-                    <Route exact path="/attribute-filter" component={AttributeFilter} />
-                    <Route exact path="/time-over" component={TimeOverTimeComparison} />
-                    <Route exact path="/drill" component={Drilling} />
-                    <Route exact path="/export" component={ExportComponents} />
-                    <Route exact path="/dashboard" component={() => <Page>Dashboard</Page>} />
-                    <Route exact path="/login" component={Login} />
-                    <Route exact path="/logout" component={Logout} />
-                    {/* DELETE THIS LINE  */} <Redirect to="/time-over" />
-                    {/* Uncomment the next line if you want to redirect unauthorized users to login form */}
-                    {/* <RedirectIfNotLoggedIn /> */}
-                </ProjectIdProvider>
+                <Route exact path="/" component={BasicComponents} />
+                <Route exact path="/afm" component={AFMComponents} />
+                <Route exact path="/visualization" component={VisualizationComponents} />
+                <Route exact path="/arithmetic" component={ArithmeticMeasure} />
+                <Route exact path="/attribute-filter" component={AttributeFilter} />
+                <Route exact path="/time-over" component={TimeOverTimeComparison} />
+                <Route exact path="/drill" component={Drilling} />
+                <Route exact path="/export" component={ExportComponents} />
+                <Route exact path="/dashboard" component={() => <Page>Dashboard</Page>} />
+                <Route exact path="/login" component={Login} />
+                <Route exact path="/logout" component={Logout} />
+                {/* DELETE THIS LINE  */} <Redirect to="/time-over" />
+                {/* Uncomment the next line if you want to redirect unauthorized users to login form */}
+                {/* <RedirectIfNotLoggedIn /> */}
             </Router>
         </div>
     );

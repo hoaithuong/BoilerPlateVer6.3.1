@@ -4,31 +4,13 @@ import { LineChart, Model } from "@gooddata/react-components";
 
 import "@gooddata/react-components/styles/css/main.css";
 
-import {
-    projectId,
-    monthDateIdentifier,
-    franchiseFeesIdentifier,
-    franchiseFeesAdRoyaltyIdentifier,
-    franchiseFeesInitialFranchiseFeeIdentifier,
-    franchiseFeesIdentifierOngoingRoyalty,
-    locationResortIdentifier,
-    totalSalesIdentifier
-} from "../utils/fixtures";
-
+import { projectId, locationResortIdentifier, totalSalesIdentifier } from "../utils/fixtures";
 
 import { CUSTOM_COLOR_PALETTE } from "../utils/colors";
 
 const totalSales = Model.measure(totalSalesIdentifier)
     .format("#,##0")
     .alias("$ Total Sales");
-const measures = [
-    Model.measure(franchiseFeesIdentifier).format("#,##0"),
-    Model.measure(franchiseFeesAdRoyaltyIdentifier).format("#,##0"),
-    Model.measure(franchiseFeesInitialFranchiseFeeIdentifier).format("#,##0"),
-    Model.measure(franchiseFeesIdentifierOngoingRoyalty).format("#,##0"),
-];
-
-const trendBy = Model.attribute(monthDateIdentifier);
 
 export class LineChartExample extends Component {
     onLoadingChanged(...params) {
